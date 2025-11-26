@@ -32,7 +32,7 @@ This project builds a comprehensive Bayesian–MCMC pipeline that:
 
 This enables more reliable modelling and improves generalization under data scarcity.
 
-<img src="Resources/synthetic_overview.png" alt="pipeline" width="1000" height="420"/>
+<!-- <img src="Resources/synthetic_overview.png" alt="pipeline" width="1000" height="420"/> -->
 
 
 ### 📌 Introduction
