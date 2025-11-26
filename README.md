@@ -2,7 +2,7 @@
 
 ### 📌 Abstract
 
-This project focuses on building a **robust synthetic data generation pipeline** and **Bayesian credit-rating prediction models** for corporate credit datasets.
+This project focuses on building a **rsynthetic data generation pipeline** and **Bayesian credit-rating prediction models** for corporate credit datasets.
 Corporate credit rating data is often scarce, confidential, and difficult to obtain, which limits the performance of machine learning models.
 To address this challenge, this project combines:
 
@@ -38,12 +38,11 @@ This enables more reliable modelling and improves generalization under data scar
 ### 📌 Introduction
 
 This repository provides a complete framework for:
-
 * Synthetic data generation for corporate financial ratios
 * Bayesian binary and multiclass credit rating classification
 * MCMC-based refinement of statistical structure
 * Model comparison between classical ML and Bayesian methods
-
+* 
 The goal is to show how **Bayesian inference and MCMC sampling significantly enhance prediction stability** in low-data, high-risk domains like credit rating.
 
 
