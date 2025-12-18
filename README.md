@@ -21,6 +21,9 @@ The final system enhances small datasets, captures uncertainty, and provides cre
 Corporate credit data is limited, noisy, and belongs to multiple rating agencies with inconsistent methodologies.
 Traditional ML models retrain from scratch on every update and cannot quantify uncertainty — a major drawback in finance.
 
+<img src="resources/ActVsPred.png" alt="Alt Text" width="900" height ="500">
+
+
 **My Solution:**
 This project builds a comprehensive Bayesian–MCMC pipeline that:
 
@@ -61,6 +64,12 @@ The system follows a structured 4-stage pipeline:
    * **Component-wise categorical probability modelling**
    * **Quantile matching** to real data
    * **MCMC refinement** to repair covariance structure
+   * **KL Divergence** and **Jensen–Shannon Divergence** are used to evaluate  the **distributional similarity** and **symmetry** of synthetic data  relative to the original data.
+<div style="display: flex; justify-content: space-between; gap: 10px;">
+  <img src="resources/KLDivergence.png" alt="KL Divergence" width="48%">
+  <img src="resources/Jensen-Divergence.png" alt="Jensen–Shannon Divergence" width="48%">
+</div>
+
 
 3. **Bayesian Prediction Models**
 
@@ -84,6 +93,47 @@ The system follows a structured 4-stage pipeline:
 * **Evaluation:** KL Divergence, Jensen–Shannon Similarity, F1, Accuracy
 * **Visualization:** Matplotlib, Seaborn
 * **Notebooks:** Jupyter Notebook
+
+Here is the **GitHub-friendly Markdown** version of your content, cleanly structured and readable in a README:
+
+---
+
+## 📌 Model Comparison with Base Models
+
+### 🔹 Original Data Comparison
+
+#### Binary Rating (4 Metrics)
+
+| Metric    | Base Model |   My Model |
+| --------- | ---------: | ---------: |
+| Accuracy  |     0.8430 | **0.8949** |
+| Precision |     0.8589 | **0.9388** |
+| Recall    |     0.9143 | **0.9008** |
+| F1 Score  |     0.8857 | **0.9194** |
+
+#### Multiclass Rating (1 Metric)
+
+| Metric   | Base Model |   My Model |
+| -------- | ---------: | ---------: |
+| Accuracy |     0.5586 | **0.5452** |
+
+### 🔹 Synthetic Data Comparison
+
+#### Binary Rating (4 Metrics)
+
+| Metric    | Base Model |   My Model |
+| --------- | ---------: | ---------: |
+| Accuracy  |     0.7809 | **0.8077** |
+| Precision |     0.7955 | **0.8971** |
+| Recall    |     0.8959 | **0.7981** |
+| F1 Score  |     0.8427 | **0.8447** |
+
+#### Multiclass Rating (1 Metric)
+
+| Metric   | Base Model |   My Model |
+| -------- | ---------: | ---------: |
+| Accuracy |     0.4850 | **0.4795** |
+
 
 ### 📌 Results Summary
 
