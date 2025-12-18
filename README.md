@@ -21,7 +21,7 @@ The final system enhances small datasets, captures uncertainty, and provides cre
 Corporate credit data is limited, noisy, and belongs to multiple rating agencies with inconsistent methodologies.
 Traditional ML models retrain from scratch on every update and cannot quantify uncertainty — a major drawback in finance.
 
-<img src="resources/ActVsPred.png" alt="Alt Text" width="900" height ="500">
+<img src="resources/Target.png" alt="Alt Text" width="900" height ="500">
 
 
 **My Solution:**
