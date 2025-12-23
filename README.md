@@ -4,7 +4,7 @@
 
 This project focuses on building a **rsynthetic data generation pipeline** and **Bayesian credit-rating prediction models** for corporate credit datasets.
 Corporate credit rating data is often scarce, confidential, and difficult to obtain, which limits the performance of machine learning models.
-To address this challenge, this project combines:
+To address this challenge, in this project I performed the following:
 
 * **Gaussian Mixture Modelling**
 * **Rank-based Quantile Matching**
@@ -14,7 +14,11 @@ To address this challenge, this project combines:
 to create **statistically accurate synthetic datasets** and **uncertainty-aware rating predictions**.
 
 The final system enhances small datasets, captures uncertainty, and provides credible intervals for every prediction, making it suitable for high-risk financial modelling tasks.
+In next step, for prediction of **Rating** and **credit Rating**, I used the same idea
+* **monte-carlo** updataion of cost function using Bayesian method
+* residual-refinement using Gaussian mixture model
 
+  
 ### 📌 Problem Statement and Solution
 
 **The Challenge:**
@@ -45,7 +49,6 @@ This repository provides a complete framework for:
 * Bayesian binary and multiclass credit rating classification
 * MCMC-based refinement of statistical structure
 * Model comparison between classical ML and Bayesian methods
-* 
 The goal is to show how **Bayesian inference and MCMC sampling significantly enhance prediction stability** in low-data, high-risk domains like credit rating.
 
 
@@ -96,7 +99,6 @@ The system follows a structured 4-stage pipeline:
 
 Here is the **GitHub-friendly Markdown** version of your content, cleanly structured and readable in a README:
 
----
 
 ## 📌 Model Comparison with Base Models
 
