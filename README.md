@@ -1,6 +1,6 @@
 # Synthetic Data Generation and Prediction for Corporate Rating using Bayesian and MCMC Techniques
 
-### 📌 Abstract
+### Abstract
 
 This project focuses on building a **rsynthetic data generation pipeline** and **Bayesian credit-rating prediction models** for corporate credit datasets.
 Corporate credit rating data is often scarce, confidential, and difficult to obtain, which limits the performance of machine learning models.
@@ -19,7 +19,7 @@ In next step, for prediction of **Rating** and **credit Rating**, I used the sam
 * residual-refinement using Gaussian mixture model
 
   
-### 📌 Problem Statement and Solution
+### Problem Statement and Solution
 
 **The Challenge:**
 Corporate credit data is limited, noisy, and belongs to multiple rating agencies with inconsistent methodologies.
@@ -42,7 +42,7 @@ This enables more reliable modelling and improves generalization under data scar
 <!-- <img src="Resources/synthetic_overview.png" alt="pipeline" width="1000" height="420"/> -->
 
 
-### 📌 Introduction
+### Introduction
 
 This repository provides a complete framework for:
 * Synthetic data generation for corporate financial ratios
@@ -52,7 +52,7 @@ This repository provides a complete framework for:
 The goal is to show how **Bayesian inference and MCMC sampling significantly enhance prediction stability** in low-data, high-risk domains like credit rating.
 
 
-### 📌 How It Works
+### How It Works
 
 The system follows a structured 4-stage pipeline:
 
@@ -87,22 +87,9 @@ The system follows a structured 4-stage pipeline:
    * Evaluation on **both real and synthetic data**
 
 
-### 📌 Tools and Technologies Used
-
-* **Programming Language:** Python
-* **Data Handling:** Pandas, NumPy
-* **Synthetic Modelling:** scikit-learn (GMM), SciPy, MCMC sampling
-* **Bayesian Methods:** Custom Metropolis–Hastings sampler
-* **Evaluation:** KL Divergence, Jensen–Shannon Similarity, F1, Accuracy
-* **Visualization:** Matplotlib, Seaborn
-* **Notebooks:** Jupyter Notebook
-
-Here is the **GitHub-friendly Markdown** version of your content, cleanly structured and readable in a README:
-
-
 ## 📌 Model Comparison with Base Models
 
-### 🔹 Original Data Comparison
+### Original Data Comparison
 
 #### Binary Rating (4 Metrics)
 
@@ -119,7 +106,7 @@ Here is the **GitHub-friendly Markdown** version of your content, cleanly struct
 | -------- | ---------: | ---------: |
 | Accuracy |     0.5586 | **0.5452** |
 
-### 🔹 Synthetic Data Comparison
+### Synthetic Data Comparison
 
 #### Binary Rating (4 Metrics)
 
@@ -137,7 +124,7 @@ Here is the **GitHub-friendly Markdown** version of your content, cleanly struct
 | Accuracy |     0.4850 | **0.4795** |
 
 
-### 📌 Results Summary
+### Results Summary
 
 * **Binary Bayesian model** outperforms classical Logistic Regression
 * **Synthetic data closely matches** real data distributions
@@ -145,12 +132,4 @@ Here is the **GitHub-friendly Markdown** version of your content, cleanly struct
   * A dataset from a **single agency** would significantly improve multiclass performance
 * **Credible intervals** allow uncertainty-aware decision-making
 * Final pipeline is robust, extensible, and suitable for financial risk modelling
-
----
-
-## 🤝 Let’s Connect!
-
-If you're interested in Bayesian modelling, synthetic data, credit risk, or MCMC techniques — feel free to reach out anytime!
-
-**Happy to collaborate, discuss ideas, or extend this work further 🚀**
 
